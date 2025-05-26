@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{60BF9663-24DF-4F45-94EC-1AD2C5C1CDC3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zote", "Zote\Zote.vcxproj", "{B89C96D6-9B38-40C1-AAFD-D403CDEA1929}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B89C96D6-9B38-40C1-AAFD-D403CDEA1929}.Debug|x64.ActiveCfg = Debug|x64
+		{B89C96D6-9B38-40C1-AAFD-D403CDEA1929}.Debug|x64.Build.0 = Debug|x64
+		{B89C96D6-9B38-40C1-AAFD-D403CDEA1929}.Release|x64.ActiveCfg = Release|x64
+		{B89C96D6-9B38-40C1-AAFD-D403CDEA1929}.Release|x64.Build.0 = Release|x64
+		{60BF9663-24DF-4F45-94EC-1AD2C5C1CDC3}.Debug|x64.ActiveCfg = Debug|x64
+		{60BF9663-24DF-4F45-94EC-1AD2C5C1CDC3}.Debug|x64.Build.0 = Debug|x64
+		{60BF9663-24DF-4F45-94EC-1AD2C5C1CDC3}.Release|x64.ActiveCfg = Release|x64
+		{60BF9663-24DF-4F45-94EC-1AD2C5C1CDC3}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58D266C0-C29C-48FE-BC99-68F484299D26}
+	EndGlobalSection
+EndGlobal
