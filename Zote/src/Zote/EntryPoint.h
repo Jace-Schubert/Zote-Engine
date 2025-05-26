@@ -5,6 +5,8 @@
 
 	int main(int argc, char** argv)
 	{
+		Zote::Log::Init();
+		
 		Zote::App* app = Zote::CreateApp();
 		app->Run();
 		delete app;
