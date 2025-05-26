@@ -1,8 +1,9 @@
 #pragma once
 
+#include "ztpch.h"
+
 #include "Core.h"
 #include "spdlog/spdlog.h"
-#include <memory>
 
 namespace Zote
 {
