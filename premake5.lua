@@ -10,6 +10,11 @@ workspace "Zote"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Zote/vendor/GLFW/include"
+
+include "Zote/vendor/GLFW"
+
 project "Zote"
 	location "Zote"
 	kind "SharedLib"
@@ -29,8 +34,16 @@ project "Zote"
 
 	includedirs
 	{
+		"%{prj.name}/vendor",
 		"%{prj.name}/vendor/spdlog/include",
-		"Zote/src"
+		"Zote/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
@@ -56,14 +69,17 @@ project "Zote"
 
 	filter "configurations:Debug"
 		defines "ZT_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "ZT_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "ZT_DIST"
+		buildoptions "/MD"
 		optimize "On"
 
 project "Sandbox"
@@ -83,6 +99,7 @@ project "Sandbox"
 
 	includedirs
 	{
+		"Zote/vendor",
 		"Zote/src",
 		"Zote/vendor/spdlog/include"
 	}
@@ -109,12 +126,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "ZT_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "ZT_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "ZT_DIST"
+		buildoptions "/MDd"
 		optimize "On"

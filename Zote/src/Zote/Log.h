@@ -2,7 +2,7 @@
 
 #include "ztpch.h"
 
-#include "Core.h"
+#include "Zote/Core.h"
 #include "spdlog/spdlog.h"
 
 namespace Zote
@@ -18,7 +18,6 @@ namespace Zote
 		static std::shared_ptr<spdlog::logger> s_coreLogger;
 		static std::shared_ptr<spdlog::logger> s_clientLogger;
 	};
-
 }
 
 #define ZT_CORE_TRACE(...) ::Zote::Log::GetCoreLogger()->trace(__VA_ARGS__)

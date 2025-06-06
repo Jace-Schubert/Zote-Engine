@@ -4,6 +4,15 @@
     <Filter Include="Zote">
       <UniqueIdentifier>{2751907C-1388-910D-BC74-7710A88A0D0F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Zote\events">
+      <UniqueIdentifier>{4B5F0DA3-B714-8698-4009-806FACBD7C9C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zote\platform">
+      <UniqueIdentifier>{7B6500B8-E725-7CEE-B060-C56B1CE0C0CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zote\platform\windows">
+      <UniqueIdentifier>{D5F2B4ED-415F-70E8-0A53-0846767E9250}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Zote.h" />
@@ -19,7 +28,27 @@
     <ClInclude Include="src\Zote\Log.h">
       <Filter>Zote</Filter>
     </ClInclude>
+    <ClInclude Include="src\Zote\Window.h">
+      <Filter>Zote</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Zote\Events\Event.h">
+      <Filter>Zote\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Zote\Events\KeyEvent.h">
+      <Filter>Zote\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Zote\Events\MouseEvent.h">
+      <Filter>Zote\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Zote\Events\WindowEvent.h">
+      <Filter>Zote\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Zote\Platform\Windows\WindowsWindow.h">
+      <Filter>Zote\platform\windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\ztpch.h" />
+    <ClInclude Include="src\Zote\Layer.h" />
+    <ClInclude Include="src\Zote\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Zote\App.cpp">
@@ -28,6 +57,11 @@
     <ClCompile Include="src\Zote\Log.cpp">
       <Filter>Zote</Filter>
     </ClCompile>
+    <ClCompile Include="src\Zote\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Zote\platform\windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\ztpch.cpp" />
+    <ClCompile Include="src\Zote\Layer.cpp" />
+    <ClCompile Include="src\Zote\LayerStack.cpp" />
   </ItemGroup>
 </Project>

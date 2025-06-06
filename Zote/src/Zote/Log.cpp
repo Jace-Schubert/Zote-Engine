@@ -1,5 +1,5 @@
 #include "ztpch.h"
-#include "Log.h"
+#include "Zote/Log.h"
 
 #include "spdlog/sinks/stdout_color_sinks.h"
 
